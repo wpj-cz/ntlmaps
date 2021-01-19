@@ -658,7 +658,7 @@ class proxy_HTTP_Client:
             self.rollback_client_data()
 
             # Method selector. Should try the most secure method.
-            if 'NTLM' in upper_auth:
+            if 'NTLM' in upper_auth or 'NEGOTIATE' in upper_auth:
                 self.logger.log('*** Using NTLM authentication method.\n')
                 #self.www_ntlm_authorization()
                 self.ntlm_auther.www_ntlm_authentication(self)

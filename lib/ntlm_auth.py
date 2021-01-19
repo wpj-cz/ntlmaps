@@ -150,8 +150,8 @@ class ntlm_auther:
 
         tmp_client_head_obj = connection.client_head_obj.copy()
         tmp_client_head_obj.replace_param_value('Connection', 'Keep-Alive')
-        #tmp_client_head_obj.replace_param_value('Authorization', 'Negotiate ' + NTLM_msg1)
-        tmp_client_head_obj.replace_param_value('Authorization', 'NTLM ' + NTLM_msg1)
+        tmp_client_head_obj.replace_param_value('Authorization', 'Negotiate ' + NTLM_msg1)
+        # tmp_client_head_obj.replace_param_value('Authorization', 'NTLM ' + NTLM_msg1)
 
         connection.reset_rserver()
         connection.rserver_buffer = ''
@@ -205,8 +205,8 @@ class ntlm_auther:
             NTLM_msg3 = ''
 
         tmp_client_head_obj = connection.client_head_obj.copy()
-        #tmp_client_head_obj.replace_param_value('Authorization', 'Negotiate ' + NTLM_msg3)
-        tmp_client_head_obj.replace_param_value('Authorization', 'NTLM ' + NTLM_msg3)
+        tmp_client_head_obj.replace_param_value('Authorization', 'Negotiate ' + NTLM_msg3)
+        # tmp_client_head_obj.replace_param_value('Authorization', 'NTLM ' + NTLM_msg3)
 
         connection.reset_rserver()
         connection.rserver_buffer = ''
