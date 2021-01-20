@@ -34,4 +34,4 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: wpj-cz/ntlmaps:latest
+          tags: wpjsro/ntlmaps:latest
